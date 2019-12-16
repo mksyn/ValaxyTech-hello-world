@@ -7,4 +7,9 @@ pipeline {
             }
         }
   }
+        stage('Maven Build') { 
+            steps {
+                sh label: '', script: 'mvn clean install' 
+            }
+        }    
 }  
