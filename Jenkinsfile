@@ -12,5 +12,10 @@ pipeline {
                 sh label: '', script: 'mvn clean install' 
             }
         }  
+        stage('Junit') { 
+            steps {
+                sh label: '', script: 'mvn test' 
+            }
+        }         
     }  
 }  
