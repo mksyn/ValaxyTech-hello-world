@@ -6,10 +6,11 @@ pipeline {
                 git 'https://github.com/mksyn/ValaxyTech-hello-world.git' 
             }
         }
-  }
+  
         stage('Maven Build') { 
             steps {
                 sh label: '', script: 'mvn clean install' 
             }
-        }    
+        }  
+    }  
 }  
